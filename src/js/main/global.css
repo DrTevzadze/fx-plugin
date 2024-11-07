@@ -1,3 +1,9 @@
+:root {
+  --primary-color: #fff;
+  --secondary-color: #717171;
+  --active-blue-color: #1784f7;
+}
+
 *,
 *::before,
 *::after {

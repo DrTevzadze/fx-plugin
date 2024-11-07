@@ -11,8 +11,8 @@ function Navigation() {
   return (
     <nav className={styles.navigation}>
       <ul>
-        <li className={styles.navItem}>
-          Packs
+        <li className={`${styles.navItem} ${styles.packsItem}`}>
+          PACKS
           {/* This nested <ul> will be shown on hover */}
           <ul className={styles.dropdown}>
             <li>Factory Presets v1.3</li>
@@ -28,16 +28,16 @@ function Navigation() {
           className={styles.navItem}
           onClick={() => handleNavigation("assets")}
         >
-          Assets
+          ASSETS
         </li>
         <li
           className={styles.navItem}
-          onClick={() => handleNavigation("tutorial")}
+          onClick={() => handleNavigation("store")}
         >
-          Tutorial
+          STORE
         </li>
         <li className={styles.navItem} onClick={() => handleNavigation("help")}>
-          Help
+          HELP
         </li>
       </ul>
     </nav>
