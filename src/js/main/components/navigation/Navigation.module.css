@@ -1,0 +1,66 @@
+/* Navigation.module.css */
+
+/* Main Navigation Styling */
+.navigation > ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid #fff;
+}
+
+.navItem {
+  padding: 1rem 2rem;
+  cursor: pointer;
+  color: #ccc;
+  font-weight: 600;
+  position: relative;
+}
+
+/* Dropdown Styling */
+.dropdown {
+  opacity: 0; /* Initially hidden */
+  transform: translateY(-10px); /* Slightly above the nav item */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+
+  position: absolute;
+  top: 100%; /* Position it below the nav item */
+  left: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  list-style: none;
+  border: 1px solid #444;
+  width: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  flex-direction: column;
+  gap: 0.5rem;
+  z-index: 10;
+  pointer-events: none; /* Prevent interaction when invisible */
+}
+
+/* Show dropdown on hover */
+.navItem:hover .dropdown {
+  opacity: 1; /* Make it visible */
+  transform: translateY(0); /* Move to its original position */
+  pointer-events: auto; /* Enable interaction when visible */
+}
+
+/* Dropdown item styling */
+.dropdown li {
+  padding: 0.5rem 0;
+  cursor: pointer;
+}
+
+.dropdown li:hover {
+  background-color: #444;
+}
+
+/* Special styling for "Install Pack" */
+.install {
+  color: #4a90e2;
+  font-weight: bold;
+  padding-top: 0.5rem;
+  border-top: 1px solid #444;
+}
