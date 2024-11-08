@@ -1,4 +1,5 @@
 import styles from "./Navigation.module.css";
+import PlaceholderSVG from "../../assets/_placeholder.svg?react";
 
 function Navigation() {
   const handleNavigation = (tab: string) => {
@@ -34,6 +35,7 @@ function Navigation() {
           className={styles.navItem}
           onClick={() => handleNavigation("store")}
         >
+          <PlaceholderSVG fill="blue" height={90} width={90} />
           STORE
         </li>
         <li className={styles.navItem} onClick={() => handleNavigation("help")}>
