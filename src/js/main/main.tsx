@@ -5,6 +5,22 @@ const Main = () => {
     <div>
       <Navigation />
       <h1>Welcome to Bolt CEP! This is a test</h1>
+      <h1>Welcome to Bolt CEP! This is a test</h1>
+      <h1>Welcome to Bolt CEP! This is a test</h1>
+      <h1>Welcome to Bolt CEP! This is a test</h1>
+      <h1>Welcome to Bolt CEP! This is a test</h1>
+      <h1>Welcome to Bolt CEP! This is a test</h1>
+      <h1>Welcome to Bolt CEP! This is a test</h1>
+      <h1>Welcome to Bolt CEP! This is a test</h1>
+      <h1>Welcome to Bolt CEP! This is a test</h1>
+      <h1>Welcome to Bolt CEP! This is a test</h1>
+      <h1>Welcome to Bolt CEP! This is a test</h1>
+      <h1>Welcome to Bolt CEP! This is a test</h1>
+      <h1>Welcome to Bolt CEP! This is a test</h1>
+      <h1>Welcome to Bolt CEP! This is a test</h1>
+      <h1>Welcome to Bolt CEP! This is a test</h1>
+      <h1>Welcome to Bolt CEP! This is a test</h1>
+      <h1>Welcome to Bolt CEP! This is a test</h1>
     </div>
   );
 };

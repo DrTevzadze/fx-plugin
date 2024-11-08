@@ -1,12 +1,11 @@
 import styles from "./Navigation.module.css";
-import PlaceholderSVG from "../../assets/_placeholder.svg?react";
 
 function Navigation() {
   const handleNavigation = (tab: string) => {
     if (tab === "tutorial") {
       window.open("https://example.com", "_blank"); // Open tutorial link in new tab
     }
-    // You can add logic here if Help or other sections need custom handling
+    // Additional logic for other sections can go here
   };
 
   return (
@@ -14,7 +13,7 @@ function Navigation() {
       <ul>
         <li className={`${styles.navItem} ${styles.packsItem}`}>
           PACKS
-          {/* This nested <ul> will be shown on hover */}
+          <div className={styles.dropdownOverlay}></div>
           <ul className={styles.dropdown}>
             <li>Factory Presets v1.3</li>
             <li>Transitions Master Bundle v3.3</li>
@@ -35,7 +34,6 @@ function Navigation() {
           className={styles.navItem}
           onClick={() => handleNavigation("store")}
         >
-          <PlaceholderSVG fill="blue" height={90} width={90} />
           STORE
         </li>
         <li className={styles.navItem} onClick={() => handleNavigation("help")}>
