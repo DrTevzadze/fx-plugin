@@ -2,6 +2,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
 import { cep, runAction } from "vite-cep-plugin";
+import svgr from "vite-plugin-svgr";
 import cepConfig from "./cep.config";
 import path from "path";
 import { extendscriptConfig } from "./vite.es.config";
@@ -48,7 +49,7 @@ if (action) {
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), cep(config)],
+  plugins: [react(), cep(config), svgr()],
   resolve: {
     alias: [{ find: "@esTypes", replacement: path.resolve(__dirname, "src") }],
   },

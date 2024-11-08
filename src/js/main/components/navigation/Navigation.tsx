@@ -5,15 +5,15 @@ function Navigation() {
     if (tab === "tutorial") {
       window.open("https://example.com", "_blank"); // Open tutorial link in new tab
     }
-    // You can add logic here if Help or other sections need custom handling
+    // Additional logic for other sections can go here
   };
 
   return (
     <nav className={styles.navigation}>
       <ul>
-        <li className={styles.navItem}>
-          Packs
-          {/* This nested <ul> will be shown on hover */}
+        <li className={`${styles.navItem} ${styles.packsItem}`}>
+          PACKS
+          <div className={styles.dropdownOverlay}></div>
           <ul className={styles.dropdown}>
             <li>Factory Presets v1.3</li>
             <li>Transitions Master Bundle v3.3</li>
@@ -28,16 +28,16 @@ function Navigation() {
           className={styles.navItem}
           onClick={() => handleNavigation("assets")}
         >
-          Assets
+          ASSETS
         </li>
         <li
           className={styles.navItem}
-          onClick={() => handleNavigation("tutorial")}
+          onClick={() => handleNavigation("store")}
         >
-          Tutorial
+          STORE
         </li>
         <li className={styles.navItem} onClick={() => handleNavigation("help")}>
-          Help
+          HELP
         </li>
       </ul>
     </nav>
